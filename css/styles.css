@@ -2,72 +2,85 @@ body {
     background-color: #000;
     margin: 0;
 }
-
 header {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url('../img/header-bg.jpeg');
-    background-size: cover; /* Добавляем для корректного отображения */
-    background-position: center; /* Центрируем изображение */
+    /* background-image: url('../img/background.jpg'); */
+    /* background: linear-gradient(180deg, #4CAF50 0%, #2E7D32 100%); */
+    background-size: 15%; /* Добавляем для корректного отображения */
+    background-position: 28vw; /* Центрируем изображение */
     background-repeat: no-repeat; /* Отключаем повторение изображения */
 }
-.top-bar {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 3%;
-    font-size: 3vh;
+.text-primary {
     color: whitesmoke;
 }
+a {
+    text-decoration: none;
+}
+.container .top-bar{
+    margin-left: 0;
+    color: whitesmoke;
+}
+.container .top-bar a {
+    color: whitesmoke;
+    text-decoration: none;
+}  
 .top-bar span {
     margin-right: 10px;
 }
-.nav-container {
+.nav-container .site-name .highlight{
+    color:#ff00ff
+}
+.site-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: whitesmoke
+} */
+
+/* .nav-container {
     display: flex;
     align-items: center;
     height: 15vh;
     justify-content: space-between;
-    padding-top: 10px; /* Добавляем отступ сверху */
-}
-.nav-container a {
+    padding-top: 10px; 
+} */
+ /* .nav-container a {
     font-size: 3vh;
-}
+ }
 .nav-container .site-name {
     font-size: 5vh;
-}
-.nav-container .site-name .highlight{
-    color:#ff00ff
 }
 
 .nav-container .logo img {
     height: 40px;
     margin-right: 10px;
     margin-bottom: 0;
-    vertical-align: middle; /* Для выравнивания с текстом */
-}
-
-.nav-container .logo, .nav-container nav {
+    vertical-align: middle; /* Для выравнивания с текстом 
+} */
+ /* .nav-container .logo, .nav-container nav {
     align-items: center;
     display: flex;
-    margin-top: 25px; /* Небольшой отступ сверху для всех элементов */
-}
-.nav-container .logo {
+    margin-top: 25px; /* Небольшой отступ сверху для всех элементов  
+} */
+/* .nav-container .logo {
     display: flex;
     align-items: center;
-}
-.logo img {
+} */ 
+/* .logo img {
     height: 40px;
     margin-right: 10px;
     margin-bottom: 0; /* Исправляем на 0 вместо 20px для согласованности */
-}
-.site-name {
-    font-size: 20px;
-    font-weight: bold;
-    color: whitesmoke
-}
-nav {
+/* } */
+
+/* nav {
     margin-right: 8vw;
-}
-nav ul {
+} */
+.navbar {
+    background-color: transparent !important; /* Фиолетовый фон */
+  }
+
+
+/* nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -80,26 +93,26 @@ nav ul li {
     position: relative;
 }
 nav ul li a {
-    color: whitesmoke; /* Цвет по умолчанию белый */
+    color: whitesmoke; /* Цвет по умолчанию белый 
     text-decoration: none;
     font-weight: bold;
-    user-select: none; /* Отключаем выделение ссылки */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем легкую тень */
-    outline: none; /* Убираем синюю обводку */
+    user-select: none; /* Отключаем выделение ссылки 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем легкую тень 
+    outline: none; /* Убираем синюю обводку 
 }
 
 nav ul li a:hover {
-    color: #ff00ff; /* Цвет при наведении розовый */
+    color: #ff00ff; /* Цвет при наведении розовый 
 }
 
 nav ul li a:focus {
-    outline: none; /* Убираем синюю обводку при фокусе */
+    outline: none; /* Убираем синюю обводку при фокусе 
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
-    top: 100%; /* Размещаем под элементом */
+    top: 100%; /* Размещаем под элементом 
     left: 0;
     background-color: #333;
     padding: 10px;
@@ -117,7 +130,7 @@ nav ul li a:focus {
     background-color: #444;
 }
 
-/* Показываем меню при наведении */
+/* Показываем меню при наведении 
 .dropdown:hover .dropdown-menu {
     display: block;
-}
+} */
