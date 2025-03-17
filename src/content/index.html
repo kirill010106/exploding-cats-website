@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  console.log('DOM fully loaded and parsed');
+
+  // Загрузка header
+  fetch('../header/header.html')
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Не удалось загрузить header');
+          }
+          return response.text();
+      })
+      .then(data => {
+          document.getElementById('header').innerHTML = data;
+
+          // Логика для активного пункта меню
+          const navLinks = document.querySelectorAll('.nav-link, .dropdown-item');
+          navLinks.forEach(link => {
+              if (link.href === window.location.href) {
+                  // Удаляем класс 'active' у всех ссылок
+                  navLinks.forEach(item => item.classList.remove('active'));
+                  // Добавляем класс 'active' к текущей ссылке
+                  link.classList.add('active');
+              }
+          });
+      })
+      .catch(error => {
+          console.error('Ошибка при загрузке header:', error);
+      });
+
+  // Загрузка footer
+  fetch('../footer/footer.html')
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Не удалось загрузить footer');
+          }
+          return response.text();
+      })
+      .then(data => {
+          document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => {
+          console.error('Ошибка при загрузке footer:', error);
+      });
+});
+  </script>
+      <style>
+        /* Стили для прелоадера */
+        .preloader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #051503; /* Фоновый цвет прелоадера */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        }
+        
+        .spinner {
+          width: 50px;
+          height: 50px;
+          border: 5px solid rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          border-top-color: #fff;
+          animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+          to { transform: rotate(360deg); }
+        }
+        
+        /* Скрываем основной контент до загрузки */
+        body {
+          overflow: hidden; /* Предотвращаем прокрутку во время загрузки */
+        }
+        
+        /* Класс, который добавим к body после загрузки */
+        .loaded {
+          overflow: auto;
+        }
+        
+        /* Анимация скрытия прелоадера */
+        .preloader-hidden {
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.5s ease;
+        }
+      </style>
+      
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <div class="preloader" id="preloader">
+        <div class="spinner"></div>
+        <script>
+            // Скрываем прелоадер после полной загрузки страницы
+            window.addEventListener('load', function() {
+              document.getElementById('preloader').classList.add('preloader-hidden');
+              document.body.classList.add('loaded');
+              
+              // Полностью удаляем прелоадер после завершения анимации
+              setTimeout(function() {
+                const preloader = document.getElementById('preloader');
+                if (preloader) {
+                  preloader.remove();
+                }
+              }, 500); // Время должно совпадать с длительностью transition
+            });
+          </script>
+      </div>
+      
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <main>
+        <div class="container text-white">
+            
+    <!-- Первый блок текста -->
+    <div class="content-block text-danger">
+      <h2>Заголовок раздела</h2>
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, magna eu ultrices venenatis, 
+          velit sapien vehicula nisi, nec cursus nisl augue at nisi. Donec malesuada, odio id lacinia faucibus, 
+          urna arcu bibendum est, vel maximus justo risus quis leo.
+      </p>
+      <p>
+          Fusce in diam et massa volutpat eleifend. Aliquam erat volutpat. Mauris ut eros sed lorem dictum 
+          condimentum. Sed vel lectus vel tellus lobortis pharetra. In hac habitasse platea dictumst.
+      </p>
+  </div>
+
+  <!-- Второй блок текста -->
+  <div class="content-block text-warning">
+      <h2>Еще один заголовок</h2>
+      <p>
+          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero 
+          sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+      </p>
+      <ul>
+          <li>Item 1: Lorem ipsum dolor sit amet.</li>
+          <li>Item 2: Consectetur adipiscing elit.</li>
+          <li>Item 3: Nullam auctor, magna eu ultrices venenatis.</li>
+      </ul>
+  </div>
+
+  <!-- Карточка с изображением -->
+  <div class="card border-0 border-radius-0">
+      <div class="card bg-dark text-white border-0">
+          <h3 class="text-white">Заголовок карточки</h3>
+          <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+          </p>
+      </div>
+  </div>
+
+  <!-- Цитата -->
+  <blockquote>
+      <p>
+          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+      </p>
+      <footer>Источник: <cite>Неизвестный автор</cite></footer>
+  </blockquote>
+        </div>
+      </footer>
+    </main>
+        <footer>
+        <div id="footer"></div>
+
+</body>
+</html>

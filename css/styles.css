@@ -35,102 +35,64 @@ a {
     font-size: 20px;
     font-weight: bold;
     color: whitesmoke
-} */
-
-/* .nav-container {
-    display: flex;
-    align-items: center;
-    height: 15vh;
-    justify-content: space-between;
-    padding-top: 10px; 
-} */
- /* .nav-container a {
-    font-size: 3vh;
- }
-.nav-container .site-name {
-    font-size: 5vh;
 }
-
-.nav-container .logo img {
-    height: 40px;
-    margin-right: 10px;
-    margin-bottom: 0;
-    vertical-align: middle; /* Для выравнивания с текстом 
-} */
- /* .nav-container .logo, .nav-container nav {
-    align-items: center;
-    display: flex;
-    margin-top: 25px; /* Небольшой отступ сверху для всех элементов  
-} */
-/* .nav-container .logo {
-    display: flex;
-    align-items: center;
-} */ 
-/* .logo img {
-    height: 40px;
-    margin-right: 10px;
-    margin-bottom: 0; /* Исправляем на 0 вместо 20px для согласованности */
-/* } */
-
-/* nav {
-    margin-right: 8vw;
-} */
 .navbar {
     background-color: transparent !important; /* Фиолетовый фон */
-  }
-
-
-/* nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-nav ul li {
-    margin: 0 45px;
-    position: relative;
-}
-nav ul li a {
-    color: whitesmoke; /* Цвет по умолчанию белый 
-    text-decoration: none;
-    font-weight: bold;
-    user-select: none; /* Отключаем выделение ссылки 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Добавляем легкую тень 
-    outline: none; /* Убираем синюю обводку 
 }
 
-nav ul li a:hover {
-    color: #ff00ff; /* Цвет при наведении розовый 
+/* Mobile menu fixes */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+    
+    .navbar-nav {
+        width: 100%;
+    }
+    
+    .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        transform: translateY(0);
+        max-height: 0;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .dropdown-menu.show {
+        max-height: 200px; /* Adjust based on your menu size */
+        padding: 0.5rem 0;
+    }
 }
-
-nav ul li a:focus {
-    outline: none; /* Убираем синюю обводку при фокусе 
-}
-
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Размещаем под элементом 
-    left: 0;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-    min-width: 150px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-.dropdown-menu a {
     display: block;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-}
-.dropdown-menu a:hover {
-    background-color: #444;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+    margin-top: 0;
 }
 
-/* Показываем меню при наведении 
-.dropdown:hover .dropdown-menu {
-    display: block;
-} */
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 0, 255, 0.2) !important;
+    transform: translateX(5px);
+    transition: transform 0.2s ease;
+}
+.dropdown-item.active {
+    background-color: rgba(255, 0, 255, 0.2) !important;
+}
