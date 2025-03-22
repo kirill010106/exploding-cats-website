@@ -8,7 +8,7 @@
   console.log('DOM fully loaded and parsed');
 
   // Загрузка header
-  fetch('../header/header.html')
+  fetch('src/header/header.html')
       .then(response => {
           if (!response.ok) {
               throw new Error('Не удалось загрузить header');
@@ -34,7 +34,7 @@
       });
 
   // Загрузка footer
-  fetch('../footer/footer.html')
+  fetch('src/footer/footer.html')
       .then(response => {
           if (!response.ok) {
               throw new Error('Не удалось загрузить footer');
