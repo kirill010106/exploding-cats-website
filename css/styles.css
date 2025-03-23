@@ -96,3 +96,12 @@ a {
 .dropdown-item.active {
     background-color: rgba(255, 0, 255, 0.2) !important;
 }
+.card .card-body{
+    background-color: #000;
+}
+.card {
+    border: none !important;
+}
+.card-text {
+    color: white;
+}
