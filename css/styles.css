@@ -105,3 +105,9 @@ a {
 .card-text {
     color: white;
 }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .my-cool-card-title {
+        min-height: 2.3em;
+    }
+}
