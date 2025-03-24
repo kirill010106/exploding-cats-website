@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Здесь ты можешь найти вдохновение, поделиться своими идеями и получить поддержку от других художников и музыкантов">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Взрывные котята</title>
-  <link rel="stylesheet" href="/exploding-cats-website/css/styles.css">
-  <link rel="icon" href="/exploding-cats-website/favicon.ico">
-  <script src="src/scripts/menu-active.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Здесь ты можешь найти вдохновение, поделиться своими идеями и получить поддержку от других художников и музыкантов">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <title>Взрывные котята</title>
+    <link rel="stylesheet" href="/exploding-cats-website/css/styles.css">
+    <link rel="icon" href="/exploding-cats-website/favicon.ico">
+    <script src="src/scripts/menu-active.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
   console.log('DOM fully loaded and parsed');
@@ -42,7 +53,7 @@
       });
 
   // Загрузка footer
-  fetch('src/footer/footer.html')
+  fetch('/exploding-cats-website/src/footer/footer.html')
       .then(response => {
           if (!response.ok) {
               throw new Error('Не удалось загрузить footer');
@@ -57,8 +68,8 @@
       });
 });
   </script>
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+    <!-- Yandex.Metrika counter -->
+    <!-- <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();
     for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
@@ -70,10 +81,10 @@
          trackLinks:true,
          accurateTrackBounce:true
     });
- </script>
- <noscript><div><img src="https://mc.yandex.ru/watch/100528705" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
- <!-- /Yandex.Metrika counter -->
-      <style>
+ </script> -->
+    <!-- <noscript><div><img src="https://mc.yandex.ru/watch/100528705" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+    <!-- /Yandex.Metrika counter -->
+    <style>
         /* Стили для прелоадера */
         .preloader {
           position: fixed;
@@ -118,18 +129,20 @@
           transition: all 0.5s ease;
         }
       </style>
-<script>
+    <script>
         // Предотвращаем автоматическую прокрутку при загрузке
         window.history.scrollRestoration = 'manual';
         window.scrollTo(0, 0);
-      </script>      
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+      </script>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <div class="preloader" id="preloader">
-        <div class="spinner"></div>
-        <script>
+      <div class="spinner"></div>
+      <script>
             // Скрываем прелоадер после полной загрузки страницы
             window.addEventListener('load', function() {
               document.getElementById('preloader').classList.add('preloader-hidden');
@@ -144,76 +157,168 @@
               }, 500); // Время должно совпадать с длительностью transition
             });
           </script>
-      </div>
-      
-    <header>
-        <div id="header"></div>
-    </header>
+    </div>
+
+    <div id="header"></div>
 
     <main>
-        <div class="container" style="margin-bottom:18vh; margin-top: 18vh;">
-            <h1 class="text-center text-white">БУМ-союз приветствует тебя!</h1>
-            <p class="text-center text-white">Здесь ты можешь найти вдохновение, поделиться своими идеями и получить поддержку от других художников и музыкантов</p>
-            <p class="text-center text-white">Присоединяйся к нашему сообществу прямо сейчас!</p>
-            <div class="d-flex justify-content-center">
-                <button type=button class="btn text-white" style="background-color: #6610f2;"><a class="text-white" href="https://t.me/BoomUnion">ПРИСОЕДИНИТЬСЯ!</a></button>
+      <div class="container" style="margin-bottom:18vh; margin-top: 18vh;">
+        <h1 class="text-center text-white">БУМ-союз приветствует тебя!</h1>
+        <p class="text-center text-white">Здесь ты можешь найти вдохновение,
+          поделиться своими идеями и получить поддержку от других художников и
+          музыкантов</p>
+        <p class="text-center text-white">Присоединяйся к нашему сообществу
+          прямо сейчас!</p>
+        <div class="d-flex justify-content-center">
+          <button type=button class="btn text-white"
+            style="background-color: #6610f2;"><a class="text-white"
+              href="https://t.me/BoomUnion">ПРИСОЕДИНИТЬСЯ!</a></button>
+        </div>
+      </div>
+
+      <div class="container text-center text-white"
+        style="padding-bottom:10vh;">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <img src="img/index-1.png" class="img-fluid h-75 w-75"
+              alt="Responsive image">
+          </div>
+          <div class="col-12 col-md-6">
+            <p>Если вы здесь, значит, вы тоже любите творить и создавать что-то
+              новое. «Взрывные Котята» готовы помочь вам в этом! Мы собрали
+              здесь творческих и креативных людей, которые хотят делиться своим
+              искусством и вдохновлять друг друга. Присоединяйтесь к нам и
+              откройте для себя мир увлекательных идей!
+              Мы готовы поддержать каждого начинающего творца и оказать
+              профессиональную помощь в ваших начинаниях.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="container text-center text-white"
+        style="padding-bottom:10vh;">
+        <div class="card-group">
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <img style="filter: invert(100%);"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHTUlEQVR4nO2dB4wVVRSGf5ZdAZFFg6KAoCAYFWNbCCpF7IggClhRrKgRo5LYjQhqDLFgiYBiw4oiqHEjoiCRkNgNWBZQA6hBVMBGBKX5zEnOJL/XmZ2Z9+686LzzJZPdnXLfvHPmzr2n3QUMwzAMwzAMwzAMw0jFjulON7KkA4B1AO4H0CzTTzJiaQJgLoCCbsfGX2JkyVWkjKmZfpIRy74ANqoylgNoFX+JkRU1AD5QZWwD0C+zTzIScQe9qm5LdomRFb0BbFVlfKy9pTGqAUwGMEl/NzzSSseLgo4f+yW4po560yE+b8YAHiXhXpFQINIrHtTNeohHhpAy5qoNUiw7AJhnk4Hi2RXAj6qMnwHsnuAaMRLfBjAw5NgT2paMRYeVcF8VRwv9+Sr1jjMSXvuSnj/b2T+U2ppTYk+rKEVM1yd4DQnw2RRt9NTzuQfsBmCttiX+r/YZ3HsueZiUEGx/ATgowbWddHORnvAatXdqBvedWztjmwrtPQArSIjrAYxq5DUjivhDt47OsUupnafL8D1yQQ2Az8jO2EtnRFO0hwQCfV3d7lEK2egoZG8Av+u13wBoXcbv9L/mehL6jc6x4wB8S8d/ATAypI2OjjKqtacFfq/+GX+H3LAHPcXLIoJNtSHjy+yYwXkcnXtXhvefO+pp8D4y5twBAFY5veXiCLfJZj2nAUDzjO49d5xOwn0kRRzd7S0zAOysx7fXnib7/wRwYIb3nytaA1itghNrvAuAJfpEJxl8hzu2yg/qZplE+64pw/fIDZNIcGcD2J/+7p6wjbZkmbPdIj8XAKjK+Dvkhl5kc8wj+0Ke+mH6u7z3R+u5cYxQXxcrRuwaIwEyHV2sQhPboVvEeZfrOeLySEJ7xyKXHmgk4GoS2thGzuulyngG6bzDv2rb8iozUtgcS1MmuI3Way+LOL4dgIVFeIcrmnoaeI9Iee1MmuKGMZWU8ZiHe809w0hgEihKi/iwxpAvq5f2mubaa4K237HU0nhqycJeS0ZcKazT9l4gq1w+o52HtnPPA/QEn+epzecoLSiYsUlwyoihBwlugcfQqUQXPyKFXOCp3VzTVJPaRGCbNC/XB6LU50kZd3pqN/eMIaGJO9wXY6ndN1XxRgwdNfQqQvvSowt8CLldvgCwk6d2c88r9BQf46nNfcgSX5/CCVnxDCRlPOVJGtITvqKQ7OCKl3JCJEC0UgX3k7rIS6WphmwDJd/goc2KYSIJ7kJPbd5Lbc6yrMPkHABgiwpuoSeb4xxSxiIALT20WRFUAXiXbI4kNRxx1FE9obhKOntoM5e0A3CRxioWa7SO3RiSn1sqEnD6TtsTX5XVE4YgYdGXyQ5obJtawuulOSW5FTQd1HCe1hkhQv9ew6aymsIEAHfrzCo4vqzIcrJp1MZDRVyfa46mohnZNmjObY+IQVuKaubT+Zs0HaeqCHfLggTFnRXFcIo1BNnjSWorqjRfd7NTjtY+QfXTFkqO9mHD5IYBNFBv1FSbtPRUP1aBglPiiwqjK73upBceXOL954oulOckiQVHldCWlBU87ow9U6hsLSh7/pzi7ZJiahCzSTineZLMUGfAX6q9QMahF2n/7aaJf3I8CWeyZ+F00oG6QMnQb9DfkpVi6Z8RqTobALTJ4GkVR+FNNHgH2xJNhjCI1jQzejJjyQSZiUGCgpSfGQ6nOBnpWXMPjVWSBmo0svxR5zJIpw993lmmjejxY3WZhNOCXpHyMBgOn6hw5mcUSZRyZ5egHl3SegyHwE6YloFkFulYcZKzP1iyT3qnQbSk9/mtGUgmcKGc6ewPEunEa2wQ3UghozKQzC4R5WnLPWen5IZDSSFDyjioBw5Mc5k4nEgKOdyz4E+IKMLsS58pvi6DGEnC6epRMv20zS362mIm6DHpJRb7aKQYs9ajQjprgf+nTmVTDRXxSMqQ4XCfCue3DCRTHbJvBD0A55s2/s0sFY4EinwkzM2MWIgyyCpZQUti2OIwIbxPi4T5WmdXUnnCCMYO2S4p+dNyypoSglLVTiFnnVreYdPnQbQeiZSkWbFNCB1KfGLnqJBPjjmvrwa+Clrn4XM2lysGkULiFnupUrd5reOnKmjdeBQDqaJKpsBW35GgZm+remWTTI/fon1tdW3EJhEKvJYs8m1FphRVZBxE3ulxnKvnyqrTceypiuOsx2D5JSOCZrQgzC0pFpGpifEcj6dSgoJOc2WwN1LUA5b6fzZaaR4vL71X0EQ5+19RCZmuQltVQsVTd7Ut3FXdZLC3uo4UtNEUnGLWtu2gq/AEASY3x0qSFszGSMl4mvmExbuZpjoG3AzgQ2cJ8GCGVq8hWss+LLLuO3jFiB8rLEm6t05z66lg392+ViWFrclupGCys7qbGHtXaii1IaZsrUHHjD6V3hskWfk6D9s4p0gzblupihqV8N8OVQz9Uwix2G2drqU7UReStFdRmRSyVTM+6rXHDNZCHfvfTIZhGIZhGIZhGIZh4L/H38hfm+MDyOzsAAAAAElFTkSuQmCC"
+                alt="illustrator">
+              <h5 class="card-title text-white my-cool-card-title">Рисунки на
+                заказ</h5>
+              <p class="card-text">Мы готовы взяться за разработку вашего
+                персонажа, разработку фона, создание скетча и тд. Советуем
+                ознакомиться со всеми нюансами лично.</p>
             </div>
-        </div>
-
-        <div class="container text-center text-white" style="padding-bottom:150px;">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-6">
-                    <img src="img/index-1.png" class="img-fluid h-75 w-75" alt="Responsive image">
-                </div>
-                <div class="col-12 col-md-6">
-            <p>Если вы здесь, значит, вы тоже любите творить и создавать что-то новое. «Взрывные Котята» готовы помочь вам в этом! Мы собрали здесь творческих и креативных людей, которые хотят делиться своим искусством и вдохновлять друг друга. Присоединяйтесь к нам и откройте для себя мир увлекательных идей!
-                Мы готовы поддержать каждого начинающего творца и оказать профессиональную помощь в ваших начинаниях.</p>
-                </div>
-
-        </div>
-
-        <div class="container text-center text-white" style="padding-bottom:150px;">
-          <div class="card-group">
-              <div class="card bg-transparent">
-                <div class="card-body">
-                  <img style="filter: invert(100%);"src="data:image/png;base64,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" alt="illustrator">
-                  <h5 class="card-title text-white my-cool-card-title">Рисунки на заказ</h5>
-                  <p class="card-text">Мы готовы взяться за разработку вашего персонажа, разработку фона, создание скетча и тд. Советуем ознакомиться со всеми нюансами лично.</p>
-                </div>
-                <div class="card-footer">
-                  <a href="/exploding-cats-website/src/content/services.html" class="btn btn-primary mt-auto">ПОДРОБНЕЕ</a>
-                </div>
-              </div>
-              <div class="card bg-transparent">
-                <div class="card-body">
-                  <img style="filter: invert(100%);" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAklEQVR4nO2awUoDQRAF+09FT/7/VbS9hxAIbqzqnlewB28vVTMLkVSFEEII/08Pfb6q6q0W0oOfn6r6rGXQUjtRdgXpbTfl9sPZ6e1RtgTpLVGmB/m+8/dHDWZ6kPc7UUbflOlBaluUDUFWRdkSZE2UTUFWRNkWZHyUjUFGR9kaZGyUzUFGRtkeZFyUE4KMinJKkDFRTgoyIsppQfRRTgyijnJqEG2Uk4Moo0wP0i96vqnffSVIPfwxXoJIbgj2xsAHPEmCHEbTBxQfIAP3gQ+QgfvAB8jAfeADZOA+8AEycB/4ABm4D3yADNwHPkAG7gMfIAP3gQ+QgfvAB8jAffx1QMufZ0mQSpBLTwR9Azo3JEFeCv7OlIH7wAfIwH3gA2TgPvABMnAf+AAZuA98gAzcBz5ABu4DHyAD9zH9m/rVJEglyKUnIjfkYhJk2StrG037wAfIwH3gA2TgPvABMnAf+AAZuA98gAzcBz5ABu4DHyAD9zH9i2Ff/L+uBKkEyQ15QG5I5Ya4ToQM3Ac+QAbuAx8gA/eBD5CB+8AHyMB94ANk4D7wATJwH/gAGbgPfIAM3Ac+QAbuAx8gA/eBD5CB+8AHyMB94ANk4D7wATJwH/gAGbgPfIAM3Ac+QAbuAx8gA/eBD5CB+7gdkKcSpMUHITek+AgJUrx4TZAQQgh1NL82UAuj8u1i3wAAAABJRU5ErkJggg==" alt="document--v1">
-                  <h5 class="card-title text-white my-cool-card-title">Помощь с проектами</h5>
-                  <p class="card-text">В данную категорию входят любые учебные задания, связанные с рисованием и творчеством. Мы предложим вам идеи, поможем разработать концепцию и создадим вместе с вами уникальный проект.</p>
-                  <div class="flex-grow-1"></div>
-                </div>
-                <div class="card-footer">
-                  <a href="/exploding-cats-website/src/content/services.html" class="btn btn-primary mt-auto">ПОДРОБНЕЕ</a>
-                </div>
-              </div>
-              <div class="card bg-transparent">
-                <div class="card-body">
-                  <img style="filter: invert(100%);" src="data:image/png;base64,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" alt="apple-music">
-                  <h5 class="card-title text-white my-cool-card-title">Написание музыки</h5>
-                  <p class="card-text">Услуга поможет вам преодолеть трудности и достичь желаемого результата. Мы предложим вам идеи, поможем написать лирику и создадим вместе с вами уникальный трек, который можно смело представить своим слушателям.</p>
-                  <div class="flex-grow-1"></div>
-                </div>
-                <div class="card-footer">
-                  <a href="/exploding-cats-website/src/content/services.html" class="btn btn-primary">ПОДРОБНЕЕ</a>
-                </div>
-              </div>
+            <div class="card-footer">
+              <a href="/exploding-cats-website/src/content/services.html"
+                class="btn btn-primary mt-auto">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <img style="filter: invert(100%);"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAklEQVR4nO2awUoDQRAF+09FT/7/VbS9hxAIbqzqnlewB28vVTMLkVSFEEII/08Pfb6q6q0W0oOfn6r6rGXQUjtRdgXpbTfl9sPZ6e1RtgTpLVGmB/m+8/dHDWZ6kPc7UUbflOlBaluUDUFWRdkSZE2UTUFWRNkWZHyUjUFGR9kaZGyUzUFGRtkeZFyUE4KMinJKkDFRTgoyIsppQfRRTgyijnJqEG2Uk4Moo0wP0i96vqnffSVIPfwxXoJIbgj2xsAHPEmCHEbTBxQfIAP3gQ+QgfvAB8jAfeADZOA+8AEycB/4ABm4D3yADNwHPkAG7gMfIAP3gQ+QgfvAB8jAffx1QMufZ0mQSpBLTwR9Azo3JEFeCv7OlIH7wAfIwH3gA2TgPvABMnAf+AAZuA98gAzcBz5ABu4DHyAD9zH9m/rVJEglyKUnIjfkYhJk2StrG037wAfIwH3gA2TgPvABMnAf+AAZuA98gAzcBz5ABu4DHyAD9zH9i2Ff/L+uBKkEyQ15QG5I5Ya4ToQM3Ac+QAbuAx8gA/eBD5CB+8AHyMB94ANk4D7wATJwH/gAGbgPfIAM3Ac+QAbuAx8gA/eBD5CB+8AHyMB94ANk4D7wATJwH/gAGbgPfIAM3Ac+QAbuAx8gA/eBD5CB+7gdkKcSpMUHITek+AgJUrx4TZAQQgh1NL82UAuj8u1i3wAAAABJRU5ErkJggg=="
+                alt="document--v1">
+              <h5 class="card-title text-white my-cool-card-title">Помощь с
+                проектами</h5>
+              <p class="card-text">В данную категорию входят любые учебные
+                задания, связанные с рисованием и творчеством. Мы предложим вам
+                идеи, поможем разработать концепцию и создадим вместе с вами
+                уникальный проект.</p>
+              <div class="flex-grow-1"></div>
+            </div>
+            <div class="card-footer">
+              <a href="/exploding-cats-website/src/content/services.html"
+                class="btn btn-primary mt-auto">ПОДРОБНЕЕ</a>
+            </div>
+          </div>
+          <div class="card bg-transparent">
+            <div class="card-body">
+              <img style="filter: invert(100%);"
+                src="data:image/png;base64,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"
+                alt="apple-music">
+              <h5 class="card-title text-white my-cool-card-title">Написание
+                музыки</h5>
+              <p class="card-text">Услуга поможет вам преодолеть трудности и
+                достичь желаемого результата. Мы предложим вам идеи, поможем
+                написать лирику и создадим вместе с вами уникальный трек,
+                который можно смело представить своим слушателям.</p>
+              <div class="flex-grow-1"></div>
+            </div>
+            <div class="card-footer">
+              <a href="/exploding-cats-website/src/content/services.html"
+                class="btn btn-primary">ПОДРОБНЕЕ</a>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="container text-center text-white"
+        style="padding-bottom: 5vh;">
+        <h1>Состав группы и направление</h1>
+        <br>
+      </div>
+
+      <div class="container group-members text-white">
+        <div class="container group-info text-white">
+          <p>Если вы ищете что-то новое и необычное в мире музыки,
+            то кэт-метал может стать для вас настоящим открытием.
+            Этот жанр сочетает в себе элементы хардкора, панка и метала,
+            создавая уникальное звучание, которое не оставит равнодушным ни
+            одного поклонника тяжёлой музыки.
+            В кэт-метале вы найдёте всё: от быстрых и яростных гитарных соло до
+            мрачных и атмосферных лирических текстов.
+            Кэт-метал идеально подходит для тех, кто хочет выпустить пар и
+            забыть о повседневных проблемах!</p>
+        </div>
+        <div class="container group-member-1 text-white">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-auto mx-auto text-center justify-content-center">
+                <img src="/exploding-cats-website/img/group-member-1.png" alt="group-member-1">
+            </div>
+            <div class="col-12 col-md-6">
+              <h1>Бесси</h1>
+              <p>Порода - Саванна</p>
+              <p>Роль в группе - гитара и вокал</p>
+              <p>Меня зовут Бесси, и я — в прошлом гимнастка, а ныне музыкантка. Мои родители переехали в другой город ещё когда я была ребёнком. Здесь я пошла в школу, где встретила своих подруг. В детстве я была замкнутой, но благодаря своему кругу общения смогла раскрыться и стать собой — дикой кисой.
+              Сегодня моя жизнь полна творчества, вдохновения и ярких эмоций. Я продолжаю искать новые способы самовыражения и развития своего таланта. Моя история — это история о том, как важно найти своё призвание и следовать за своими мечтами.</p>
+            </div>
+          </div>
+          <hr>
+
+        </div>
+        <div class="container group-member-2 text-white">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <h1>Улой</h1>
+              <p>Порода - Сфинкс</p>
+              <p>Роль в группе - бас гитара и вокал</p>
+              <p>Меня зовут Улой. В детстве была агрессивным ребёнком, но, повзрослев, взялась за ум и поняла, сколько боли принесла другим. Чувство вины мучает меня до сих пор. Мне бывает непросто сказать «прости», но если я это делаю, то искренне.
+                По характеру я довольно простая, часто использую в речи жаргонизмы. Я экстраверт, могу постоять за себя и своих друзей. С ними я познакомилась еще в детском саду а в школе мы оказались в разных классах, но почти всегда отказывались расставаться, когда нас отправляли к директору.</p>
+            </div>
+            <div class="col-12 col-md-auto mx-auto text-center justify-content-center">
+                <img src="/exploding-cats-website/img/group-member-2.png" alt="group-member-2">
+            </div>
+          </div>
+          <hr>
+          <div class="container group-member-3 text-white">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-auto mx-auto text-center justify-content-center">
+                  <img src="/exploding-cats-website/img/group-member-3.png" alt="group-member-3">
+              </div>
+              <div class="col-12 col-md-6">
+                <h1>Миксер</h1>
+                <p>Порода - неизвестна...</p>
+                <p>Роль в группе - барабанщица</p>
+                <p>Меня зовут Миксер. В детстве мои приемные родители часто пропадали на работе. Чтобы в семье были деньги, я начала продавать свитеры. Однажды, когда я занималась этим, рядом проехала служебная машина. Я предложила полицейскому один свитер. Но он в гневе ответил, что направляется на помощь к моим родителям. Эти слова заставили меня задуматься — неужели их больше нет со мной?... Когда еда дома закончилась, я оказалась вынуждена пойти жить в садик. Именно там я познакомилась с Улой, и моя жизнь немного изменилась.</p>
+              </div>
+            </div>
+            <hr>
+      </div>
 
     </main>
 
-        <footer>
-        <div id="footer"></div>
+    <div id="footer"></div>
 
-</body>
+  </body>
 </html>

@@ -111,3 +111,18 @@ a {
         min-height: 2.3em;
     }
 }
+
+.group-members img {
+    height: 400px;
+}
+
+@media (max-width: 767.98px) {
+    .about-pic img {
+        width: 100% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about-pic img {
+        width: 75% !important;
+  }
+}
