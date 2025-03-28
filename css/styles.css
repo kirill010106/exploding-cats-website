@@ -130,3 +130,7 @@ a {
 html, body {
     overflow-x: auto; /* Включает горизонтальную прокрутку при необходимости */
   }
+
+.services-block img {
+    height: 400px;
+}
